@@ -25,14 +25,14 @@ install:
 
 before_script:
 
-  # Install Classic Profile
+  # Install Profile
   - cd ../
   - mkdir profiles
   - mv vih-behat profiles/
   - mkdir drupal
   - mv profiles drupal/
   - cd drupal
-  - drush make --prepare-install profiles/vih_dk/build-vih.make --yes
+  - drush make --prepare-install profiles/vih-behat/build-vih.make --yes
   - sudo chmod -R 777 sites/all/modules
   - drush si vih_dk --sites-subdir=default --db-url=mysql://root:@127.0.0.1/drupal --account-name=admin --account-pass=classic --site-mail=admin@example.com --site-name="Drupal Classic Profile" --yes
   - drush cc all --yes
