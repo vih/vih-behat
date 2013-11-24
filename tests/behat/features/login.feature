@@ -5,7 +5,7 @@ I want to be able to login
  
   Scenario: Login
     Given I am on "/user"
-    When I fill in "lsolesen" for "edit-name"
-    And I fill in "klan1n" for "edit-pass"
+    When I fill in "user" for "edit-name"
+    And I fill in "username" for "edit-pass"
     And I press "Log in"
     Then I should see "Log ud"
