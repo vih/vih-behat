@@ -55,8 +55,7 @@ install:
 before_script:
 
   - cd drupal
-  - drush site-install vih_dk install_configure_form.update_status_module='array(FALSE,FALSE)' --site-name="PNWDS Behat" --account-mail=admin@testab.com --account-pass=p4ssw0rd --yes
-  - drush runserver --server=builtin 8888 > /dev/null &
+  - php -d sendmail_path=/dev/null `which drush` si vih_dk --db-url=mysql://root:@127.0.0.1/drupal --account-name=admin --account-pass=VIH@2012 --site-mail=admin@example.com --site-name="vih.dk" --yes
   - sleep 3
   - cd profiles/vih-behat/tests/behat
 
