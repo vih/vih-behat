@@ -31,7 +31,7 @@ install:
 
   # Test the current branch
   - cd drupal
-  # - echo "projects[vih_dk][download][branch] = $TRAVIS_BRANCH" >> profiles/vih-behat/vih-behat_distro.make
+  - echo "projects[vih-behat][download][branch] = $TRAVIS_BRANCH" >> profiles/vih-behat/build-vih.make
   - drush make profiles/vih-behat/build-vih.make --yes
   - cp profiles/vih-behat/settings.php.example sites/default/settings.php
   - cp profiles/vih-behat/settings.local.php.example sites/default/settings.local.php
