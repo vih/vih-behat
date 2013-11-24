@@ -56,7 +56,7 @@ before_script:
 
   - cd drupal
   - php -d sendmail_path=`which true` `pear config-get php_dir`/drush/drush.php si vih_dk --db-url=mysql://root:@127.0.0.1/drupal --account-name=admin --account-pass=VIH@2012 --site-mail=admin@example.com --site-name="vih.dk" --yes
-  - drush --yes runserver 127.0.0.1:8888 &
+  - drush runserver 127.0.0.1:8888 &
   - sleep 3
   - cd profiles/vih-behat/tests/behat
 
