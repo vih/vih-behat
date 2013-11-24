@@ -38,9 +38,9 @@ install:
   - cd ../
 
   # Setup files
-  - mkdir drupal/sites/default/files
-  - mkdir drupal/sites/default/private_files
-  - sudo chmod -R 777 drupal/sites/all/modules
+  # - mkdir drupal/sites/default/files
+  # - mkdir drupal/sites/default/private_files
+  - sudo chmod -R 777 drupal/sites/all
 
   # Setup display for Selenium
   - export DISPLAY=:99.0
