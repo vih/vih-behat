@@ -14,3 +14,6 @@ I want to be able create a checklist with different options
     When I edit "Kajakkursus"
     Then I should see "Interesser"
       And be able to add different options for the interest field as the anonymous user should be able to choose between when going to the add to cart form
+    When I edit "Kajakkursus"
+    Then I should see "Interesser"
+      And be able to add different options for the interest field as the anonymous user should be able to choose between when going to the add to cart form
