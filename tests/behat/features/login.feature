@@ -8,4 +8,4 @@ I want to be able to login
     When I fill in "admin" for "edit-name"
     And I fill in "admin" for "edit-pass"
     And I press "Log in"
-    Then I should see "Log ud"
+    Then I should see "Logout"
