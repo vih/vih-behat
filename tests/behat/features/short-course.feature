@@ -3,6 +3,16 @@ In order to sell a course online
 As an anonymous user
 I want to be able to buy a course
 
+  @api @javascript
+  Scenario: An adminitrator can create a course
+    Given I am logged in as a user with the "administrator" role
+    When I am on "node/add/short_course_basic"
+      And I fill in the following:
+        | Title | Test course |
+        | Body | This is a test course. |
+      And I press "Save"
+    Then I should see the text "Short Course Basic Test course has been created."
+
   Scenario: See a list with the courses
     Given I am on "/kortekurser"
     Then I should see "Korte kurser"
