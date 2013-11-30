@@ -3,7 +3,7 @@ In order to sell a course online
 As an anonymous user
 I want to be able to buy a course
 
-  @api @javascript
+  @api
   Scenario: An adminitrator can create a course
     Given I am logged in as a user with the "administrator" role
     When I am on "node/add/short_course_basic"
@@ -47,7 +47,6 @@ I want to be able to buy a course
     Then I should see "Gennemgå ordre"
     When I press "Fortsæt til næste trin"
     Then I should see the text "Vent venligst mens du bliver omdirigeret til betalingsserveren."
-
 
   Scenario: Buy a basic short course and pay online
     Given I am on "/kortekurser"
