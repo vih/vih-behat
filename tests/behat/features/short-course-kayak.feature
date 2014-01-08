@@ -1,9 +1,9 @@
 Feature: Anonymous user should be able to decide interest area
-In order to make a better course
+In order to capture the interest of people signing up
 As an course administrator
-I want to be able create a checklist with different options
+I want to be able create a checklist with different options the user can choose from
 
-  Scenario: When viewing a course a checkbox with interests is shown
+  Scenario: When viewing a course, a checkbox with interests is shown
     Given I am on "/kortekurser"
     When I follow "Kajakkursus"
     Then I should see radio buttons with "Interested in EPP2 course"
